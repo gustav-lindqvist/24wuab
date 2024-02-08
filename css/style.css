@@ -1,10 +1,26 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
+
+
+#wrapper{
+    display: grid;
     grid-template-areas: 
-    '';
+    'hd hd hd'
+    'mn mn mn'
+    'personer personer personer'
+    'info info info'
+    'personal personal personal'
+    ;
+}
+
+.logo{
+    border: none;
+    height: 7vh;
+    background-color: #43009B;
 }
 
 .header{
     display: flex;
+    grid-area: 'hd';
     background-color: #43009B;
     height: 10vh;
     width: auto;
@@ -12,6 +28,12 @@ body{
     align-items: center;
     align-content: center;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
+
+}
+
+.main{
+    font-family: 'nunito';
+    display: grid;
+    grid-area: 'mn';
+    width: auto;
 }
