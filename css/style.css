@@ -2,7 +2,6 @@
 
 
 #wrapper{
-    display: grid;
     grid-template-areas: 
     'hd hd hd'
     'mn mn mn'
@@ -11,29 +10,40 @@
     'personal personal personal'
     ;
 }
-
+body{
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
 .logo{
-    border: none;
-    height: 7vh;
-    background-color: #43009B;
+    height: 10vh;
 }
 
 .header{
-    display: flex;
-    grid-area: 'hd';
+    display: grid;
+    grid-area: hd;
     background-color: #43009B;
     height: 10vh;
-    width: auto;
-    size: 300px;
+    width: 100%;
     align-items: center;
-    align-content: center;
+    justify-content: center;    
     object-fit: cover;
 
 }
-
+#navigation a{
+    color: white;
+    font-size: x-large;
+    justify-content: space-between;
+    background-color: #43009B;
+    padding: 5px;
+}
 .main{
+    display:grid;
     font-family: 'nunito';
-    display: grid;
-    grid-area: 'mn';
+    grid-area: mn;
     width: auto;
+    justify-content: center;
+}
+ul{
+    font-size: x-large;
 }
