@@ -13,7 +13,6 @@
 body{
     width: auto;
     margin: 0;
-    padding: 0;
 }
 .logo{
     height: 10vh;
@@ -35,7 +34,7 @@ body{
     font-size: x-large;
     justify-content: space-between;
     background-color: #43009B;
-    padding: 5px;
+    padding: 9px;
 }
 .main{
     display:grid;
@@ -43,6 +42,7 @@ body{
     grid-area: mn;
     width: auto;
     justify-content: center;
+    margin: 10px;
 }
 ul{
     font-size: x-large;
