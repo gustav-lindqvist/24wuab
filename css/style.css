@@ -1,58 +1,62 @@
-body{
+body {
     background-color: rgb(255, 255, 255);
-    grid-template-areas: 
-    "nav nav nav"
-    "hd hd hd"
-    "mn mn mn"
-    "ft ft";
+    grid-template-areas:
+        "nav nav nav"
+        "hd hd hd"
+        "mn mn mn"
+        "ft ft";
     margin: 0;
     padding: 0;
 }
-.navigation{
-    display:flex ;
+
+.navigation {
+    display: flex;
     grid-area: "nav";
     width: auto;
     justify-content: space-around;
-    background-color: rgb(67,5,154);
+    background-color: rgb(67, 5, 154);
     height: 15vh;
     color: white;
 }
-.menu{
+
+.menu {
     height: 100vh;
     width: 80vw;
-    background: rgb(67,5,154);
+    background: rgb(67, 5, 154);
     position: fixed;
     top: 0;
     left: -90vw;
     transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
     z-index: 10;
     color: white;
     text-decoration: none;
 }
 
-.menu-button{
+.menu-button {
     cursor: pointer;
     display: none;
 }
+
 .xButton {
     display: none;
     cursor: pointer;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
-.menu-button i.material-icons{
+.menu-button i.material-icons {
     font-size: 2.5rem;
 }
 
-.show{
+.show {
     left: 0;
 }
-.title{
+
+.title {
     color: black;
     background-color: white;
     display: block;
@@ -63,47 +67,77 @@ body{
 }
 
 main{
-    
+
 }
 
-.footer{
-    display: block;
-    grid-area: "ft";
+.footer {
+    display: flex;
+    grid-area: ft;
     color: black;
-    background-color: whitesmoke;
-    padding: 5px;
+    background-color: rgb(67, 5, 154);
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+
 }
 
-.fade-layer.visible{
+.footer h3 {
+    font-size: medium;
+}
+
+.footer img {
+    width: auto;
+    height: 50%;
+    object-fit:scale-down;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.fade-layer.visible {
     display: block;
 }
-@media (max-width:800px){
+
+@media (max-width:800px) {
 
     .menu-button{
         display: flex;
         grid-area: "nav";
     }
-    main{
+
+    main {
         font-size: xx-large;
         margin: 6px;
         padding: 10px;
         font-family: sans-serif;
     }
-    .title{
-        background-color:rgb(58,191,153);
+
+    .title {
+        background-color: rgb(58, 191, 153);
         display: block;
         grid-area: "hd";
         text-align: center;
+        background-image: url('img/lecture.jpg');
+
     }
-    body{
-        grid-template-areas: 
-        "nav"
-        "hd"
-        "mn"
-        "ft";
+
+    body {
+        grid-template-areas:
+            "nav"
+            "hd"
+            "mn"
+            "ft";
         width: auto;
         background-color: white;
     }
+
     .fade-layer{
         position: fixed;
         top: 0;
@@ -114,11 +148,35 @@ main{
         display: none;
         z-index: 5;
     }
-    .footer{
-        display: block;
-        grid-area: "ft";
+
+    .footer {
+        display: grid;
+        grid-area: ft;
         color: black;
-        background-color: whitesmoke;
-        
+        background-color: rgb(67, 5, 154);
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+
+    }
+
+    .footer h3 {
+        font-size: medium;
+        padding: none;
+        margin: none;
+    }
+
+    .footer img {
+        width: auto;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: lightcoral;
+        text-decoration: underline;
     }
 }
