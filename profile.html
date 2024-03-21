@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Hem</a>
+        <a href="/profile.html">Logga in</a>
+        <a href="#">Kundvagn</a>
+        <a href="#">Våra nischparfymer</a>
+      </div>
+    <div id="wrapperProfile">
+        <header>
+            <button class="openbtn" onclick="openNav()"><img id="menu" src="/img/menu_FILL0_wght400_GRAD0_opsz24.png" alt="hamburger menu"></button>
+            <a href="/index.html"><h1>Nisch.se</h1></a>
+            <img id="cart" src="/img/shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="Shopping Cart">
+            <button id="profileBtn" onclick="openProfile(profile.html)"><img id="profile" src="/img/account_circle_FILL0_wght400_GRAD0_opsz24.png" alt="Profile Symbol"></button>
+            <script>
+                document.getElementById("profileBtn").addEventListener("click", function() {
+                    openProfile("/profile.html");
+                });
+            </script>
+        </header>
+          <nav>
+            <form id="search" action="">
+              <input type="text" placeholder="Sök efter våra nischparfymer...">
+              <button type="submit"><img src="/img/searchSymbolWhiteBackground.png" alt="search symbol"></button>
+            </form>
+          </nav>
+          <section id="scProfile">
+            <h2>Inloggning</h2>
+          </section>
+          <main id="mnProfile">
+            <div id="e-post">
+                <h3>E-postadress</h3>
+                <input type="text" placeholder="Ange din e-postadress">
+            </div>
+            <div id="lösenord">
+                <h3>Lösenord</h3>
+                <input type="text" placeholder="Ange ditt lösenord">
+                <a href="#">Har du glömt ditt lösenord?</a>
+            </div>
+            <div id="loggaIn">
+                <button>Logga in</button>
+                <p>Har du inte skaffat ett konto redan?</p>
+                <a href="#">Regristrera</a>
+            </div>
+          </main>
+          <footer id="ftProfile"></footer>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
