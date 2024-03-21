@@ -3,10 +3,9 @@ body {
 }
 #wrapper{
     height: 100vh;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10% 60% 50% 10%;
+    grid-template-rows: 10% 5% 60% 50% 10%;
     grid-template-areas: 
     'hd'
     'nv'
@@ -20,13 +19,18 @@ header{
     h1 {
         color: aliceblue;
     }
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center ;
+    position:relative;
+
 }
 nav{
     grid-area: nv;
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
 }
 section{
     grid-area: sc;
@@ -43,6 +47,44 @@ section img{
 }
 main{
     grid-area: mn;
+    color: white;
+}
+#menu{
+    position:absolute;
+    left: 1%;
+    width: 45px;
+    height: auto;
+}
+#cart{
+    position: absolute;
+    right: 2%;
+    width: 27.5px;
+    height: auto;
+}
+#profile{
+    position: absolute;
+    right: 10%;
+    width: 27.5px;
+    height: auto;
+}
+
+
+
+#search{
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+}
+#search button{
+    height: 33px;
+    display: flex;
+    justify-content: center;
+}
+#search input{
+    height: 27.5px;
+    width: 88.5%;
+    outline: none;
 }
 footer{
     grid-area: ft;
