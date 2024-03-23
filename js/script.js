@@ -6,6 +6,15 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
   }
+  document.getElementById("profileBtn").addEventListener("click", function() {
+    openProfile("/profile.html");
+});
   function openProfile(htmlFileName){
+    window.location.href = htmlFileName;
+  }
+  document.getElementById("productsBtn").addEventListener("click", function(){
+    openProducts("/products.html")
+  });
+  function openProducts(htmlFileName){
     window.location.href = htmlFileName;
   }

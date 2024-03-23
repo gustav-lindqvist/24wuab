@@ -241,3 +241,22 @@ main a{
 #ftProfile{
     background-color: white;
 }
+#wrapperProducts{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 5% 5% auto 10%;
+    grid-template-areas: 
+    'hd hd'
+    'nv nv'
+    'sc sc'
+    'mn1 mn2'
+    'ft ft'
+    ;
+}
+#mn1{
+    grid-area: mn1;
+}
+#mn2{
+    grid-area: mn2;
+}

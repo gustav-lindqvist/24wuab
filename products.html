@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Hem</a>
+        <a href="/profile.html">Logga in</a>
+        <a href="#">Kundvagn</a>
+        <a href="/products.html">Våra nischparfymer</a>
+      </div>
+    <div id="wrapperProducts">
+        <header>
+            <button class="openbtn" onclick="openNav()"><img id="menu" src="/img/menu_FILL0_wght400_GRAD0_opsz24.png" alt="hamburger menu"></button>
+            <a href="/index.html"><h1>Nisch.se</h1></a>
+            <img id="cart" src="/img/shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="Shopping Cart">
+            <button id="profileBtn" onclick="openProfile(profile.html)"><img id="profile" src="/img/account_circle_FILL0_wght400_GRAD0_opsz24.png" alt="Profile Symbol"></button>
+            <script>
+                document.getElementById("profileBtn").addEventListener("click", function() {
+                    openProfile("/profile.html");
+                });
+            </script>
+        </header>
+          <nav>
+            <form id="search" action="">
+              <input type="text" placeholder="Sök efter våra nischparfymer...">
+              <button type="submit"><img src="/img/searchSymbolWhiteBackground.png" alt="search symbol"></button>
+            </form>
+          </nav>
+          <section>
+
+          </section>
+          <main id="mn1">
+
+          </main>
+          <main id="mn2">
+
+          </main>
+          <footer></footer>
+    </div>
 </body>
 </html>
